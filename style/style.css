@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Khand:wght@300&display=swap');
+
+body {
+  overflow-x: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 50%;
+  height: 100%; 
+  margin: 60px auto 0;
+  overflow: hidden;
+}
+
+.box {
+  flex: 0 0 30%; 
+  height: 300px;
+  background-color: rgb(235, 90, 90);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s;
+  margin: 1%;
+}
+
+.box .image-container {
+  width: 100%;
+  height: 100%;
+}
+
+.box:hover {
+  transform: scale(1.1);
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(27, 24, 24);
+  border-radius: 0;
+  overflow-x: hidden; 
+}
+
+.header {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+}
+
+.container.move-up {
+  margin-top: 30px;
+}
+
+.logo {
+  width: 300px;
+}
+
+.hidden {
+  display: none;
+}
+
+#cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.header, #title, #play_button, #next_button, #prev_button {
+  position: relative; 
+  z-index: 1; 
+}
+
+.player-content {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#title {
+  position: absolute;
+  bottom: 30px; 
+  align-self: center;
+  color: white;
+}
+
+.controls {
+  position: absolute;
+  bottom: 0;
+  justify-content: center;
+}
+
+.song-title {
+  font-family: 'Futura Light', Arial;
+  font-size: 50px;
+}
+
+#play_button, #next_button, #prev_button {
+  background: transparent; 
+  border: none; 
+  padding: 10px;
+  margin: 10px;
+  font-size: 30px; 
+  color: rgba(248, 244, 244, 0.562); 
+  transition: background 0.3s ease;
+}
+
+#play_button:hover, #next_button:hover, #prev_button:hover {
+  background: rgba(255, 255, 255, 0.2); 
+}
+
+.player-content {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.player-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
